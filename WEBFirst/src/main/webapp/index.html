@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my sql</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    animation: fadeInDown 1s ease-out;
+  }
+  form {
+    margin-top: 20px;
+    animation: slideInLeft 1s forwards;
+  }
+  input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    padding: 12px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0 10px;
+  }
+  input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+</style>
+</head>
+<body>
+
+  <h1>MySQL Operations</h1>
+  <form action="MyServlet" method="post">
+    <input type="submit" value="Display data">
+  </form>
+  <form action="Servlet2" method="post">
+    <input type="submit" value="Update data">
+  </form>
+  <form action="ServletDel" method="post">
+    <input type="submit" value="Delete data">
+  </form>
+   <form action="ServletIn" method="post">
+    <input type="submit" value="Insert data">
+  </form>
+
+</body>
+</html>
